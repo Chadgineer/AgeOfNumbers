@@ -14,6 +14,11 @@ public class HexTile : MonoBehaviour
     public void SetOwner(TeamType team)
     {
         tileOwner = team;
-        sr.color = team == TeamType.None ? Color.gray : (team == TeamType.Player1 ? Color.blue : Color.red);
+        sr.color = team switch
+        {
+            TeamType.Player1 => Color.blue,
+            TeamType.Player2 => Color.red,
+            _ => Color.gray
+        };
     }
 }
