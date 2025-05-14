@@ -16,8 +16,9 @@ public class Soldier : MonoBehaviour
     public void MoveTo(Vector2Int newPos, Vector3 worldPos)
     {
         transform.position = worldPos;
-        gridPosition = newPos;
+        gridPosition = newPos; 
     }
+
 
     private Vector2Int EstimateGridPosition(Vector3 position)
     {
