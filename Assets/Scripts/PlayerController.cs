@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider != null)
                 {
                     Soldier s = hit.collider.GetComponent<Soldier>();
-                    if (s.team == TeamType.Player1) 
+                    if (s.team == GameManager.instance.currentPlayerTurn)
                         selectedSoldier = s;
                 }
             }

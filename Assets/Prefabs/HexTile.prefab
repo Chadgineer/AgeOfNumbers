@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 103595069818968247}
   - component: {fileID: 8195705393963968528}
-  - component: {fileID: 1392131520868853187}
   - component: {fileID: 6536888606748686885}
+  - component: {fileID: 1392131520868853187}
   - component: {fileID: 5784134731581245237}
   m_Layer: 9
   m_Name: HexTile
@@ -90,6 +90,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6536888606748686885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4485824670302844523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e3bdf4e034978478e64c662cd341df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hexCoords: {x: 0, y: 0}
+  tileOwner: -1
 --- !u!50 &1392131520868853187
 Rigidbody2D:
   serializedVersion: 5
@@ -117,20 +131,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6536888606748686885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4485824670302844523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42e3bdf4e034978478e64c662cd341df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hexCoords: {x: 0, y: 0}
-  tileOwner: -1
 --- !u!60 &5784134731581245237
 PolygonCollider2D:
   m_ObjectHideFlags: 0

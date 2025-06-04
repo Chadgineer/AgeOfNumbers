@@ -21,4 +21,9 @@ public class HexTile : MonoBehaviour
             _ => Color.gray
         };
     }
+
+    private void OnMouseDown()
+    {
+        GameManager.instance.TryPlaceSoldierOnTile(this);
+    }
 }
